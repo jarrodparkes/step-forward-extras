@@ -795,6 +795,9 @@ while(True):
     country = random.choice(countries)
     hobby = random.choice(hobbies)
     tense = random.choice(tenses)
-    print(f'PROMPT: {name} is from {country} and enjoys {hobby}.')
+    print(f'PROMPT: {name} is from {country} and enjoys {hobby}.\n')
+    for tense in tenses:
+        print('{0: <20}'.format(f'{tense["name"]}') + '=>\t\t' + f'{tense["example"]}')
+    print('')
     print(f'EXERCISE: Please create a sentence about {name} using the {tense["name"]} verb tense.\n')
     input('')

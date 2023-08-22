@@ -129,7 +129,7 @@ while(True):
     os.system('clear')
     family = random.choice(families)
     member = random.choice(members)
-    print(f'PROMPT: Your word family is for the word \"{family["verb"]}\":\n')
+    print(f'PROMPT: Your word family is \"{family["verb"]}\":\n')
     print(f'verb\t\t=>\t\t{family["verb"]}')
     print(f'noun\t\t=>\t\t{family["noun"]}')
     print(f'adjective\t=>\t\t{family["adjective"]}')
